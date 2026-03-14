@@ -14,6 +14,25 @@ import { useEffect, useState } from "react";
 
 import HighlightsDrawer from "./components/HighlightsDrawer";
 import pathConfig from "../../config/path/pathConfig";
+import logo1 from "../../assets/funders-logos/Logo1-UKIERI.png";
+import logo2 from "../../assets/funders-logos/Logo2-SPARC2.png";
+import logo3 from "../../assets/funders-logos/Logo3-UCL.png";
+import logo4 from "../../assets/funders-logos/Logo4-MNIT.png";
+import logo5 from "../../assets/funders-logos/Logo5-BritishC.png";
+import logo6 from "../../assets/funders-logos/Logo6-MinEdu.png";
+import logo7 from "../../assets/funders-logos/Logo7-DSIT.png";
+const logoData = [
+  { img: logo1, url: "http://www.ukieri.org/" },
+  { img: logo2, url: "https://sparc.iitkgp.ac.in/" },
+  { img: logo3, url: "https://www.ucl.ac.uk/" },
+  { img: logo4, url: "https://www.mnit.ac.in/" },
+  { img: logo5, url: "https://www.britishcouncil.org//" },
+  { img: logo6, url: "https://www.education.gov.in/" },
+  {
+    img: logo7,
+    url: "https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology",
+  },
+];
 
 const TeamAbout = () => {
   const [highlightCards, setHighlightCards] = useState([]);
@@ -64,13 +83,58 @@ const TeamAbout = () => {
 
   return (
     <Box>
+      {/* Logos */}
+      <Box sx={{ mb: 4 }}>
+        <Typography variant="h5" sx={{ color: "primary.main", mb: 2 }}>
+          Funding Institutions
+        </Typography>
+
+        <Grid container justifyContent="center" alignItems="center">
+          {logoData.map((item, index) => (
+            <Grid
+              key={index}
+              size={{ xs: 6, sm: 3}}
+              display="flex"
+              justifyContent="center"
+            >
+              <Box
+                component="a"
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  width: 150,
+                  height: 150,
+                  transition: "transform 0.2s",
+                  "&:hover": {
+                    transform: "scale(1.05)",
+                  },
+                }}
+              >
+                <Box
+                  component="img"
+                  src={item.img}
+                  alt={`Partner logo ${index}`}
+                  sx={{
+                    maxWidth: "100%",
+                    maxHeight: "100%",
+                    objectFit: "contain",
+                  }}
+                />
+              </Box>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
+
       {/* Team */}
       <Box sx={{ mb: 4 }}>
-        <Typography variant="h5" gutterBottom sx={{ color: "primary.main" }}>
+        <Typography variant="h5" sx={{ color: "primary.main", mb: 2 }}>
           Contributors
         </Typography>
-      </Box>
-      <Box sx={{ ml: 4 }}>
         {/* Core Team*/}
         <Box sx={{ mb: 4 }}>
           <Typography variant="h6" gutterBottom sx={{ color: "primary.dark" }}>
@@ -188,7 +252,7 @@ const TeamAbout = () => {
       </Box>
 
       {/* Highlights */}
-      <Box>
+      <Box sx={{ mb: 4 }}>
         <Typography variant="h5" sx={{ color: "primary.main", mb: 2 }}>
           News & Highlights
         </Typography>
