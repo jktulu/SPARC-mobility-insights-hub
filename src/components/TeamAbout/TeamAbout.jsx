@@ -11,9 +11,10 @@ import {
   Divider,
 } from "@mui/material";
 import { useEffect, useState } from "react";
-
 import HighlightsDrawer from "./components/HighlightsDrawer";
 import pathConfig from "../../config/path/pathConfig";
+
+// Import logos
 import logo1 from "../../assets/funders-logos/Logo1-UKIERI.png";
 import logo2 from "../../assets/funders-logos/Logo2-SPARC2.png";
 import logo3 from "../../assets/funders-logos/Logo3-UCL.png";
@@ -28,10 +29,7 @@ const logoData = [
   { img: logo4, url: "https://www.mnit.ac.in/" },
   { img: logo5, url: "https://www.britishcouncil.org//" },
   { img: logo6, url: "https://www.education.gov.in/" },
-  {
-    img: logo7,
-    url: "https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology",
-  },
+  { img: logo7, url: "https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology", },
 ];
 
 const TeamAbout = () => {
