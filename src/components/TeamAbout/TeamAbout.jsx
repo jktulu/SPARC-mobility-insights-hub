@@ -268,11 +268,11 @@ const TeamAbout = () => {
         <Typography variant="h5" sx={{ color: "primary.main", mb: 2 }}>
           Funders
         </Typography>
-        <Grid container justifyContent="center" alignItems="center">
+        <Grid container justifyContent="center" alignItems="center" spacing={4}>
           {logoData1.map((item, index) => (
             <Grid
               key={index}
-              size={{ xs: 4, sm: 2 }}
+              size={{ xs: 6, sm: 4, md: 2.4 }}
               display="flex"
               justifyContent="center"
             >
@@ -296,7 +296,6 @@ const TeamAbout = () => {
                 <Box
                   component="img"
                   src={item.img}
-                  alt={`Partner logo ${index}`}
                   sx={{
                     maxWidth: "100%",
                     maxHeight: "100%",
