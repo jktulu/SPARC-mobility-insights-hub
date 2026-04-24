@@ -55,6 +55,11 @@ cd [repository_folder_name]
 npm install
 ```
 
+If there are dependency conflicts, you may try:
+```
+npm install --legacy-peer-deps
+```
+
 #### Step 3: Set Up Environment Variables
 The project requires secret keys for Mapbox and Web3Forms to function.
 
