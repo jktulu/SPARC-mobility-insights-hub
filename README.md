@@ -98,6 +98,9 @@ Essentially, we are instructing the following to occur when we deploy: Build the
 ```bash
 npm run deploy
 ```
+
+If this command files, you may have to delete the folder `node_modules/.cache/gh-pages`.
+
 3. Configure **GitHub Pages**:
    - Go to *Settings* → *Pages*.
    - Source = *Deploy from a branch.*
