@@ -39,7 +39,7 @@
     "code": "A05",
     "title": "Drainage system coverage",
     "description": "The provision of sufficient drainage to avoid disruptions that primarily affect non-motorised modes and thus encourage acquisition of a private vehicle.",
-    "stat": "N/A",
+    "stat": "n/a",
     "unit": "",
     "target": "No public target",
     "datasets": "None currently available"
@@ -48,7 +48,7 @@
     "code": "A06",
     "title": "Trained motor vehicle drivers",
     "description": "Driver training is important for safe driving, which includes being considerate to non-motorised transport users.",
-    "stat": "N/A",
+    "stat": "n/a",
     "unit": "",
     "target": "100% of drivers certified in safety protocols",
     "datasets": "None currently available"
@@ -57,7 +57,7 @@
     "code": "A07",
     "title": "Transport budget",
     "description": "Expenditure on transport indicates to which extent an efficient transport system can be developed and maintained.",
-    "stat": "",
+    "stat": "n/a",
     "unit": "",
     "target": "No public investment target",
     "datasets": "None currently available"
