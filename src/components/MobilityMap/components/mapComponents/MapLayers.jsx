@@ -1,23 +1,85 @@
 import { Box } from "@mui/material";
 import { Layer, Popup, Source } from "react-map-gl/mapbox";
 
+// // Tooltip content for the popup
+// const TooltipContent = ({ layer, feature }) => {
+//   if (!layer?.tooltipProperties || !feature?.properties) {
+//     return null;
+//   }
+
+//   return (
+//     <Box sx={{ p: 0.5, maxWidth: 240 }}>
+//       {layer.tooltipProperties.map(
+//         ({ label, property, prefix = "", suffix = "" }) => (
+//           <div key={property}>
+//             <strong>{label}</strong>
+//             {prefix}
+//             {feature.properties[property] ?? "N/A"}
+//             {suffix}
+//           </div>
+//         )
+//       )}
+//     </Box>
+//   );
+// };
+
 // Tooltip content for the popup
 const TooltipContent = ({ layer, feature }) => {
   if (!layer?.tooltipProperties || !feature?.properties) {
     return null;
   }
 
+  // Function to check if a string is a valid URL
+  const isUrl = (str) => {
+    if (typeof str !== 'string') return false;
+    try {
+      new URL(str);
+      return true;
+    } catch {
+      return false;
+    }
+  };
+
   return (
     <Box sx={{ p: 0.5, maxWidth: 240 }}>
       {layer.tooltipProperties.map(
-        ({ label, property, prefix = "", suffix = "" }) => (
-          <div key={property}>
-            <strong>{label}</strong>
-            {prefix}
-            {feature.properties[property] ?? "N/A"}
-            {suffix}
-          </div>
-        )
+        ({ label, property, prefix = "", suffix = "", isLink = false }) => {
+          const value = feature.properties[property];
+          const displayValue = value ?? "N/A";
+          
+          // Check if this should be rendered as a link
+          if (isLink && isUrl(displayValue)) {
+            return (
+              <div key={property}>
+                <strong>{label}</strong>
+                {prefix}
+                <a 
+                  href={displayValue} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ 
+                    color: '#0066cc', 
+                    textDecoration: 'underline',
+                    cursor: 'pointer'
+                  }}
+                >
+                  {displayValue}
+                </a>
+                {suffix}
+              </div>
+            );
+          }
+          
+          // Regular text display
+          return (
+            <div key={property}>
+              <strong>{label}</strong>
+              {prefix}
+              {displayValue}
+              {suffix}
+            </div>
+          );
+        }
       )}
     </Box>
   );
