@@ -89,6 +89,15 @@
     "target": "100 car-equivalent managed parking spaces with fee collection (Comprehensive Mobility Plan, Jaipur, 2010)",
     "datasets": "Rites (2026) Comprehensive Mobility Plan for Jaipur City - Draft CMP report, Table 2.61, pg. 2-58"
   },
+  "A11": {
+    "code": "A11",
+    "title": "Well-lit streets",
+    "description": "Well-lit streets contribute to safety for vulnerable groups.",
+    "stat": "32.9",
+    "unit": "per cent",
+    "target": "100 of the road network to be well-lit",
+    "datasets": "Safety Pin App Audit"
+  },
   "B01": {
     "code": "B01",
     "title": "Private motorisation rate",
