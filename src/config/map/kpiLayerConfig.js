@@ -41,6 +41,76 @@ export const layerConfig = {
       { label: "Road: ", property: "name_1" },
     ],
   },
+
+  A05: {
+    id: "data-layer",
+    type: "fill",
+    file: "kpiData",
+    paint: {
+      "fill-color": [
+        'match',
+        ['get', 'BUFF_DIST'],
+        200,
+        "#1100ff",
+        400,
+        "#5eaeff",
+        /* other */ '#ccc'
+      ],
+      "fill-opacity": 0.7,
+      "fill-outline-color": "#ffffff",
+    },
+    tooltipProperties: [
+      { label: "Location: ", property: "name" },
+      { label: "Diameter: ", property: "BUFF_DIST" },
+    ],
+  },
+
+  // A05 for roads affected by water logging
+  //   A05: {
+  //   id: "data-layer",
+  //   type: "line",
+  //   file: "kpiData",
+  //   paint: {
+  //     "line-color": "#08519c",
+  //     "line-width": 2,
+  //     "line-opacity": 0.7,
+  //   },
+  //   tooltipProperties: [
+  //     { label: "Road: ", property: "name" },
+  //   ],
+  // },
+
+  // A05 for streams (optional)
+  //  A05: {
+  //   id: "data-layer",
+  //   type: "line",
+  //   file: "kpiData",
+  //   paint: {
+  //     "line-color": [
+  //       "interpolate",
+  //       ["linear"],
+  //       ["get", "drain_area2"],
+  //       0,
+  //       "#d4d3f7",
+  //       0.5,
+  //       "#b3b1f8",
+  //       1,
+  //       "#9e99ff",
+  //       10,
+  //       "#5651f7",
+  //       175,
+  //       "#0800f8",
+  //     ],
+  //     "line-width": 2,
+  //     "line-opacity": 0.5,
+  //       },
+  //   tooltipProperties: [
+  //     { label: "Type: ", property: "LAYER"},
+  //     { label: "in flow: ", property: "IN_FLOW", suffix: " m\u00B3" },
+  //     { label: "out flow: ", property: "OUT_FLOW", suffix: " m\u00B3"},
+  //     { label: "Drain area: ", property: "drain_area2", suffix: " km\u00B2"},
+  //   ],
+  // },
   B02: {
     id: "data-layer",
     type: "line",
@@ -70,6 +140,19 @@ export const layerConfig = {
       { label: "Buses: ", property: "bus", suffix: "%"},
       { label: "Goods vehicles: ", property: "Goods_vehi", suffix: "%"},
       { label: "Others: ", property: "others2", suffix: "%"},
+    ],
+  },
+   A08: {
+    id: "data-layer",
+    type: "circle",
+    file: "kpiData",
+    paint: {
+      "circle-color": "#9c0808",
+      "circle-opacity": 0.8,
+      "circle-stroke-color": "#ffffff",
+    },
+    tooltipProperties: [
+      { label: "camera type: ", property: "fclass" },
     ],
   },
   A10: {
