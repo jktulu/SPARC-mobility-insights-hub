@@ -44,6 +44,15 @@
     "target": "No public target",
     "datasets": "None currently available"
   },
+    "A07": {
+    "code": "A07",
+    "title": "Transport budget",
+    "description": "Expenditure on transport indicates to which extent an efficient transport system can be developed and maintained.",
+    "stat": "n/a",
+    "unit": "",
+    "target": "No public investment target",
+    "datasets": "None currently available"
+  },
   "A06": {
     "code": "A06",
     "title": "Trained motor vehicle drivers",
@@ -51,15 +60,6 @@
     "stat": "n/a",
     "unit": "",
     "target": "100% of drivers certified in safety protocols",
-    "datasets": "None currently available"
-  },
-  "A07": {
-    "code": "A07",
-    "title": "Transport budget",
-    "description": "Expenditure on transport indicates to which extent an efficient transport system can be developed and maintained.",
-    "stat": "n/a",
-    "unit": "",
-    "target": "No public investment target",
     "datasets": "None currently available"
   },
   "A08": {
@@ -89,6 +89,15 @@
     "target": "100 car-equivalent managed parking spaces with fee collection (Comprehensive Mobility Plan, Jaipur, 2010)",
     "datasets": "Rites (2026) Comprehensive Mobility Plan for Jaipur City - Draft CMP report, Table 2.61, pg. 2-58"
   },
+  "A11": {
+    "code": "A11",
+    "title": "Well-lit streets",
+    "description": "Well-lit streets contribute to safety for vulnerable groups.",
+    "stat": "32.9",
+    "unit": "per cent",
+    "target": "100 of the road network to be well-lit",
+    "datasets": "Safety Pin App Audit"
+  },
   "B01": {
     "code": "B01",
     "title": "Private motorisation rate",
@@ -105,7 +114,7 @@
     "stat": "1.49",
     "unit": "volume/capacity",
     "target": "No official target",
-    "datasets": "MNIT Primary Survey - to be shared"
+    "datasets": "L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, [page tbc]"
   },
   "B03": {
     "code": "B03",
