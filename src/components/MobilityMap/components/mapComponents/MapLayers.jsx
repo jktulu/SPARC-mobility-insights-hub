@@ -40,8 +40,15 @@ const TooltipContent = ({ layer, feature }) => {
     }
   };
 
+  // Handle link click
+  const handleLinkClick = (e, url) => {
+    e.preventDefault();
+    e.stopPropagation();
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
-    <Box sx={{ p: 0.5, maxWidth: 240 }}>
+    <Box sx={{ p: 0.5, maxWidth: 240, pointerEvents: 'auto' }}>
       {layer.tooltipProperties.map(
         ({ label, property, prefix = "", suffix = "", isLink = false }) => {
           const value = feature.properties[property];
@@ -50,21 +57,25 @@ const TooltipContent = ({ layer, feature }) => {
           // Check if this should be rendered as a link
           if (isLink && isUrl(displayValue)) {
             return (
-              <div key={property}>
+              <div key={property} style={{ pointerEvents: 'auto' }}>
                 <strong>{label}</strong>
                 {prefix}
-                <a 
-                  href={displayValue} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                <button
+                  onClick={(e) => handleLinkClick(e, displayValue)}
                   style={{ 
                     color: '#0066cc', 
                     textDecoration: 'underline',
-                    cursor: 'pointer'
+                    cursor: 'pointer',
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    font: 'inherit',
+                    pointerEvents: 'auto'
                   }}
+                  title={displayValue}
                 >
-                  {displayValue}
-                </a>
+                  Open Image
+                </button>
                 {suffix}
               </div>
             );
@@ -72,7 +83,7 @@ const TooltipContent = ({ layer, feature }) => {
           
           // Regular text display
           return (
-            <div key={property}>
+            <div key={property} style={{ pointerEvents: 'auto' }}>
               <strong>{label}</strong>
               {prefix}
               {displayValue}
