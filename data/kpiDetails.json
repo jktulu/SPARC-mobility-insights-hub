@@ -33,7 +33,7 @@
     "stat": "3.3",
     "unit": "per cent",
     "target": "No public target",
-    "datasets": "to be confirmed"
+    "datasets": "openstreetmap.org"
   },
   "A05": {
     "code": "A05",
@@ -42,9 +42,9 @@
     "stat": "n/a",
     "unit": "",
     "target": "No public target",
-    "datasets": "None currently available"
+    "datasets": "Primary Survey by MNIT Jaipur"
   },
-    "A07": {
+  "A07": {
     "code": "A07",
     "title": "Transport budget",
     "description": "Expenditure on transport indicates to which extent an efficient transport system can be developed and maintained.",
@@ -62,14 +62,15 @@
     "target": "100% of drivers certified in safety protocols",
     "datasets": "None currently available"
   },
-  "A08": {
+  "A08": { 
     "code": "A08",
     "title": "Local traffic flows",
     "description": "Enforcement of traffic rules and regulations will ensure less traffic disorders at locations with high density of activities. Data about traffic flow can be collected more easily using sensors and cameras.",
-    "stat": "117",
-    "unit": "seconds",
+    "stat": "n/a", 
+    "unit": "", 
     "target": "",
-    "datasets": "MNIT Primary Survey - to be shared"
+    "datasets": "not currently available. The map shows the location of speed cameras in 2026 from OpenStreetMap.org",
+    "previous value": "117 seconds"
   },
   "A09": {
     "code": "A09",
@@ -114,7 +115,7 @@
     "stat": "1.49",
     "unit": "volume/capacity",
     "target": "No official target",
-    "datasets": "L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, [page tbc]"
+    "datasets": "Rites (2026) Comprehensive Mobility Plan for Jaipur City - Draft CMP report, Table 2.23, pg. 2-35 (to be verified). The map shows the traffic composition at Inner Cordon Locations estimated in the L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Table 3-9, p.3-12."
   },
   "B03": {
     "code": "B03",
