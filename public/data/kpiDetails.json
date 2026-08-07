@@ -44,6 +44,15 @@
     "target": "No public target",
     "datasets": "None currently available"
   },
+    "A07": {
+    "code": "A07",
+    "title": "Transport budget",
+    "description": "Expenditure on transport indicates to which extent an efficient transport system can be developed and maintained.",
+    "stat": "n/a",
+    "unit": "",
+    "target": "No public investment target",
+    "datasets": "None currently available"
+  },
   "A06": {
     "code": "A06",
     "title": "Trained motor vehicle drivers",
@@ -51,15 +60,6 @@
     "stat": "n/a",
     "unit": "",
     "target": "100% of drivers certified in safety protocols",
-    "datasets": "None currently available"
-  },
-  "A07": {
-    "code": "A07",
-    "title": "Transport budget",
-    "description": "Expenditure on transport indicates to which extent an efficient transport system can be developed and maintained.",
-    "stat": "n/a",
-    "unit": "",
-    "target": "No public investment target",
     "datasets": "None currently available"
   },
   "A08": {
