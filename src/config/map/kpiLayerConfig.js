@@ -131,12 +131,12 @@ export const layerConfig = {
   { 
     label: "Image 1: ", 
     property: "image_1",
-    render: (value) => `<a href="${value}" target="_blank">View Image</a>`
+    //render: (value) => `<a href="${value}" target="_blank">View Image</a>`
   },
   { 
     label: "Image 2: ", 
     property: "image_2",
-    render: (value) => `<a href="${value}" target="_blank">View Image</a>`
+    //render: (value) => `<a href="${value}" target="_blank">View Image</a>`
   }
 ]
   },
