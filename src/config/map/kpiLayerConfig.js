@@ -117,12 +117,27 @@ export const layerConfig = {
       "circle-opacity": 0.8,
       "circle-stroke-color": "#ffffff",
     },
+    // tooltipProperties: [
+    //   { label: "Audit point: ", property: "audit_point" },
+    //   { label: "Lighting score: ", property: "Lighting" },
+    //   { label: "Lighting description: ", property: "light_descr" },
+    //   { label: "Image 1: ", property: "image_1" },
+    //   { label: "Image 2: ", property: "image_2" }
+    // ],
     tooltipProperties: [
-      { label: "Audit point: ", property: "audit_point" },
-      { label: "Lighting score: ", property: "Lighting" },
-      { label: "Lighting description: ", property: "light_descr" },
-      { label: "Image 1: ", property: "image_1" },
-      { label: "Image 2: ", property: "image_2" }
-    ],
+  { label: "Audit point: ", property: "audit_point" },
+  { label: "Lighting score: ", property: "Lighting" },
+  { label: "Lighting description: ", property: "light_descr" },
+  { 
+    label: "Image 1: ", 
+    property: "image_1",
+    render: (value) => `<a href="${value}" target="_blank">View Image</a>`
+  },
+  { 
+    label: "Image 2: ", 
+    property: "image_2",
+    render: (value) => `<a href="${value}" target="_blank">View Image</a>`
+  }
+]
   },
 };
