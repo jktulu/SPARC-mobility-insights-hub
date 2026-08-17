@@ -6,7 +6,7 @@
     "stat": "3.5",
     "unit": "per 100k people",
     "target": "60 buses per 100k people (Comprehensive Mobility Plan, Jaipur, 2010)",
-    "datasets": "Buses Jaipur (2015-2017), smartcities.gov.in; Buses in Jaipur, Department of Transport Rajasthan"
+    "datasets": "'Buses Jaipur (2015-2017)' dataset, smartcities.gov.in; 'Buses in Jaipur' dataset, Department of Transport Rajasthan"
   },
   "A02": {
     "code": "A02",
@@ -15,7 +15,7 @@
     "stat": "45",
     "unit": "per cent",
     "target": "50% of population within 500m of public transit (Comprehensive Mobility Plan, Jaipur, 2010)",
-    "datasets": "openstreetmap.org; ward population and households"
+    "datasets": "OpenStreetMap.org; 'Population and Households' dataset"
   },
   "A03": {
     "code": "A03",
@@ -33,7 +33,7 @@
     "stat": "3.3",
     "unit": "per cent",
     "target": "No public target",
-    "datasets": "openstreetmap.org"
+    "datasets": "OpenStreetMap.org"
   },
   "A05": {
     "code": "A05",
@@ -42,7 +42,7 @@
     "stat": "n/a",
     "unit": "",
     "target": "No public target",
-    "datasets": "Primary Survey by MNIT Jaipur"
+    "datasets": "Geospatial data obtained from Jaipur Development Authority (JDA), see also 'Land Use' dataset"
   },
   "A07": {
     "code": "A07",
@@ -69,7 +69,7 @@
     "stat": "n/a", 
     "unit": "", 
     "target": "",
-    "datasets": "not currently available. The map shows the location of speed cameras in 2026 from OpenStreetMap.org",
+    "datasets": "None currently available. The map shows the location of speed cameras in 2026 from OpenStreetMap.org",
     "previous value": "117 seconds"
   },
   "A09": {
@@ -88,7 +88,7 @@
     "stat": "13.1",
     "unit": "per 1k people",
     "target": "100 car-equivalent managed parking spaces with fee collection (Comprehensive Mobility Plan, Jaipur, 2010)",
-    "datasets": "Rites (2026) Comprehensive Mobility Plan for Jaipur City - Draft CMP report, Table 2.61, pg. 2-58"
+    "datasets": "Rites (2026) Comprehensive Mobility Plan for Jaipur City - Draft CMP report, Table 2.61, pg. 2-58; Geospatial data obtained from Jaipur Development Authority (JDA), see also 'Land Use' dataset"
   },
   "A11": {
     "code": "A11",
@@ -97,7 +97,7 @@
     "stat": "32.9",
     "unit": "per cent",
     "target": "100 of the road network to be well-lit",
-    "datasets": "Safety Pin App Audit"
+    "datasets": "'SafetiPin' dataset"
   },
   "B01": {
     "code": "B01",
@@ -106,7 +106,7 @@
     "stat": "963",
     "unit": "per 1,000 people",
     "target": "",
-    "datasets": "No of registered vehicles in Jaipur city, Mehta (2019)"
+    "datasets": "'No of Registered Vehicles in Jaipur City' dataset"
   },
   "B02": {
     "code": "B02",
@@ -115,7 +115,7 @@
     "stat": "1.49",
     "unit": "volume/capacity",
     "target": "No official target",
-    "datasets": "Rites (2026) Comprehensive Mobility Plan for Jaipur City - Draft CMP report, Table 2.23, pg. 2-35 (to be verified). The map shows the traffic composition at Inner Cordon Locations estimated in the L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Table 3-9, p.3-12."
+    "datasets": "Rites (2026) Comprehensive Mobility Plan for Jaipur City - Draft CMP report, Table 2.23, pg. 2-35. The map shows the traffic composition at Inner Cordon Locations estimated in the L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Table 3-9, p.3-12. See also: 'Classified Traffic Volume' dataset."
   },
   "B03": {
     "code": "B03",
@@ -124,7 +124,7 @@
     "stat": "4.8",
     "unit": "per 10k people",
     "target": "No official target",
-    "datasets": "Rites (2026) Comprehensive Mobility Plan for Jaipur City - Draft CMP report, Table 2.7, pg. 2-12"
+    "datasets": "Rites (2026) Comprehensive Mobility Plan for Jaipur City - Draft CMP report, Table 2.7, pg. 2-12; see 'Road Accidents' dataset."
   },
   "B04": {
     "code": "B04",
@@ -133,7 +133,7 @@
     "stat": "22",
     "unit": "per cent",
     "target": "31% of all trips involve walking and/or cycling (Comprehensive Mobility Plan, Jaipur, 2010)",
-    "datasets": "Modal Share Of Transport, CMP ppt (n.d); Mode Distribution In Jaipur (Including Walk), JMRCL (2018)"
+    "datasets": "'Modal Share Of Transport' dataset, CMP ppt (n.d); 'Mode Distribution In Jaipur (Including Walk)' dataset, JMRCL (2018)"
   },
   "B05": {
     "code": "B05",
@@ -142,7 +142,7 @@
     "stat": "19",
     "unit": "per cent",
     "target": "50% of all trips made by public transport (Comprehensive Mobility Plan, Jaipur, 2010)",
-    "datasets": "Modal Share Of Transport, CMP ppt (n.d); Mode Distribution In Jaipur (Including Walk), JMRCL (2018)"
+    "datasets": "'Modal Share Of Transport' dataset, CMP ppt (n.d); 'Mode Distribution In Jaipur (Including Walk)' dataset, JMRCL (2018)"
   },
   "B06": {
     "code": "B06",
@@ -151,6 +151,6 @@
     "stat": "4.6",
     "unit": "per 10 PT trips",
     "target": "No target",
-    "datasets": "Modal Share Of Transport, CMP ppt (n.d); Mode Distribution In Jaipur (Including Walk), JMRCL (2018)"
+    "datasets": "'Modal Share Of Transport' dataset, CMP ppt (n.d); 'Mode Distribution In Jaipur (Including Walk)' dataset, JMRCL (2018)"
   }
 }
